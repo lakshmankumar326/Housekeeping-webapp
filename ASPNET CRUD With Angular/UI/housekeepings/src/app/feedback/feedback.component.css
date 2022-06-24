@@ -1,0 +1,55 @@
+.HouseKeepings-containers
+{
+    border: solid rgb(236, 56, 56);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px rgb(247, 18, 18);
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+textarea
+{
+    border: solid #EF5350;
+    outline: none;
+    color: rgb(159, 157, 157);
+    font-size: large;
+}
+label
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-group
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+button
+{
+    font-size: larger;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #EF5350;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: #f13633;
+}

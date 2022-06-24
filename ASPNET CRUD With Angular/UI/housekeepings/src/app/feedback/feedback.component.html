@@ -1,0 +1,23 @@
+<div class="HouseKeepings-containers">
+    <div class="HouseKeeping-form">
+      <form #form="ngForm" (ngSubmit)="onSubmit()"  class="flex">
+        
+
+        <div class="form-group">
+          <label for="">Feedback</label>
+          
+          <textarea type="comment-box" placeholder="write Suggestion" rows="8" cols="50" name="Feedback" [(ngModel)]="houseKeeping.feedback"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="">Complaint</label>
+          <textarea type="complaint" name="Complaint" placeholder="write Complaint" rows="8" cols="1" [(ngModel)]="houseKeeping.complaint"></textarea>
+        </div>
+        <div class="button">
+          <button>Submit</button>
+        </div>
+        
+      </form>
+      
+    </div>
+</div>      

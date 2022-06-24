@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>House Keeping Service</h1>
+
+ 
+
+  <div class="HouseKeepings-containers">
+    <div class="HouseKeeping-form">
+      <form #form="ngForm" (ngSubmit)="onSubmit()"  class="flex">
+        <div class="form-group">
+          <label for="">Name</label>
+          <input  type="text"  name="Name" [(ngModel)]="houseKeeping.name"   >
+        </div>
+        <div class="form-group">
+          <label for="">Date</label>
+          <input type="date" name="Date" [(ngModel)]="houseKeeping.date">
+        </div>
+        
+          <div class="form-group form-group-inline">
+            <div>
+              <div>
+                <label for="">Time Request</label>
+                <input type="time" name="TimeReq" [(ngModel)]="houseKeeping.timeReq">
+              </div>
+            <div>
+              <label for="">Time In</label>
+              <input type="time" name="TimeIn" [(ngModel)]="houseKeeping.timeIn">
+            </div>
+            <div>
+              <label for="">Time Out</label>
+              <input type="time" name="TimeOut"[(ngModel)]="houseKeeping.timeOut">
+            </div>
+            </div>
+           </div>
+           
+            
+         
+        <div class="form-group">
+            <button>Submit</button>
+          </div>
+      </form>

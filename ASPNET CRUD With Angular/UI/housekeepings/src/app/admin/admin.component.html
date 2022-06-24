@@ -1,0 +1,85 @@
+          <h1>HouseKeeping Service</h1>
+          
+          
+          <div class="search">
+              <!-- <label class="search-tag" for="">Search</label> -->
+              <input type="text" class="form-control" placeholder="Search student data " [(ngModel)]="searchText"  >
+          </div>
+
+          <div  class="houseKeepings-grid">
+            <div class="naming">
+              <label>Name</label>
+            <label>Date</label>
+            <label>TimeReq</label>
+            <label>TimeIn</label>
+            <label>TimeOut</label>
+            <label>Feedback</label>
+            <label>Request</label>
+
+            <label>Complaint</label>
+
+            </div>
+            
+            <div class="houseKeeping-row" *ngFor="let houseKeeping of houseKeepings |filter:searchText" >
+             
+               <div class="houseKeeping-row-details"  (click)="populateForm(houseKeeping)">
+                
+                  <span>{{houseKeeping.name}}</span>
+                  <span>{{houseKeeping.date}}</span>
+                  <span>{{houseKeeping.timeReq}}</span>
+                  <span>{{houseKeeping.timeIn}}</span>
+                  <span>{{houseKeeping.timeOut}}</span>
+                  <span>{{houseKeeping.feedback}}</span>
+                  <span>{{houseKeeping.complaint}}</span>
+                  <span>{{houseKeeping.serviceRequest}}</span>
+                  <span>{{houseKeeping.ServiceIsApproved}}</span>
+                </div>
+
+                <div class="houseKeeping-row-action">
+                  <a (click)="updateHouseKeepingServiceRejected(houseKeeping)"><i class="fa-solid fa-square-xmark"></i></a>
+                  <a (click)="updateHouseKeepingServiceApproved(houseKeeping)"><i class="fa-solid fa-check"></i></a>
+                </div>
+
+            </div>
+          </div>
+<!-- 
+          <div class="naming-sug">
+            <label>Suggestion</label>
+            <label>Complaint</label>
+          </div>
+          
+           <div class="house-feedback-row" *ngFor="let houseKeeping of houseKeeping |filter:searchText" >
+            <div class="house-feedback-row-details"  (click)="populateForm(houseKeeping)">
+               <div>
+                <span>{{houseKeeping.feedback}}</span>
+               </div>
+               
+              
+            </div>
+            
+           </div>
+
+            <div class="house-complaint-row" *ngFor="let houseKeeping of houseKeeping |filter:searchText" >
+            <div class="house-complaint-row-details"  (click)="populateForm(houseKeeping)">
+               <div>
+                <span>{{houseKeeping.complaint}}</span>
+               </div>
+               
+              
+            </div>
+            
+           </div> -->
+          <!-- <div class="house" *ngFor="let o of houseKeeping">
+            <span> {{o.feedback}} </span>
+            <span> {{o.complaint}} </span>
+          </div> -->
+
+          
+          
+          
+          
+       
+   
+
+     
+ 
